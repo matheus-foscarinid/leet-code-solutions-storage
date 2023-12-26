@@ -11,6 +11,7 @@ function strStr(haystack: string, needle: string): number {
       if (currNeedleIndex === needleLastIndex) return startingNeedleIndex;
       currNeedleIndex++;
     } else {
+      i = i - currNeedleIndex;
       currNeedleIndex = 0;
     }
   }
