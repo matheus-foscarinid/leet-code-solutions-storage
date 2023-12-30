@@ -1,10 +1,12 @@
 function reverseBits(n: number): number {
-	let m = 0;
+  let result = 0;
 
-  for(let i = 0; i < 32; i++) {
-    m = (m << 1) | (n & 1);
+  for (let i = 0; i < 32; i++) {
+    // Left shift result by 1bit and do a OR with the last bit of n (n & 1)
+    result = (result << 1) | (n & 1)
+    // Right shift by 1bit on n
     n >>>= 1;
   }
 
-  return m >>> 0;
+  return result >>> 0;
 };
