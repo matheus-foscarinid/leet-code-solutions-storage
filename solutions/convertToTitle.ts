@@ -10,5 +10,3 @@ function convertToTitle(columnNumber: number): string {
   if (!repeats) return alphabet[rest - 1];
   return alphabet[repeats - 1] + alphabet[rest - 1];
 };
-
-console.log(convertToTitle(647));
